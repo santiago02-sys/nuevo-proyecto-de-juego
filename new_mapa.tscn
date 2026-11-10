@@ -1,0 +1,748 @@
+[gd_scene format=3 uid="uid://cul48ltchekf5"]
+
+[ext_resource type="Texture2D" uid="uid://1ntmecxvfytl" path="res://imagenes/Piso/Planks037A_2K-JPG_Color.jpg" id="1_mk6rk"]
+[ext_resource type="Texture2D" uid="uid://p6pb240y7kc5" path="res://imagenes/Pared/textures/patterned_terracotta_tiling_diff_4k.jpg" id="2_yq2s1"]
+
+[sub_resource type="Environment" id="Environment_1hpwa"]
+background_mode = 1
+ambient_light_source = 2
+ambient_light_color = Color(0.06666667, 0.06666667, 0.08235294, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g4v7s"]
+albedo_color = Color(0.3665946, 0.3665946, 0.36659458, 1)
+albedo_texture = ExtResource("1_mk6rk")
+normal_enabled = true
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81rpy"]
+albedo_color = Color(0.31764707, 0.31764707, 0.31764707, 1)
+albedo_texture = ExtResource("2_yq2s1")
+normal_enabled = true
+uv1_triplanar = true
+uv2_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x3cor"]
+albedo_color = Color(0.31764707, 0.31764707, 0.31764707, 1)
+albedo_texture = ExtResource("2_yq2s1")
+normal_enabled = true
+uv1_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ev3xi"]
+albedo_color = Color(0.18431373, 0.101960786, 0.003921569, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2mbla"]
+albedo_color = Color(0.43529412, 0.17254902, 0, 1)
+albedo_texture = ExtResource("1_mk6rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3q5ht"]
+albedo_color = Color(0.43529412, 0.17254902, 0, 1)
+albedo_texture = ExtResource("1_mk6rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w07jp"]
+albedo_color = Color(0.43529412, 0.17254902, 0, 1)
+albedo_texture = ExtResource("1_mk6rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kjmv7"]
+albedo_color = Color(0.43529412, 0.17254902, 0, 1)
+albedo_texture = ExtResource("1_mk6rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_thndo"]
+albedo_color = Color(0.52197903, 0.20974568, 4.813075e-08, 1)
+albedo_texture = ExtResource("1_mk6rk")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1hpwa"]
+albedo_color = Color(0.25595567, 0.19982275, 0.09013926, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mk6rk"]
+albedo_color = Color(0.22260016, 0.13803819, 0.037475865, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yq2s1"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dx7l8"]
+albedo_color = Color(0.25490198, 0.2, 0.09019608, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7x8o5"]
+albedo_color = Color(0.22352941, 0.13725491, 0.039215688, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p0rlr"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2mk6l"]
+albedo_color = Color(0.25490198, 0.2, 0.09019608, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5h7w7"]
+albedo_color = Color(0.22352941, 0.13725491, 0.039215688, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ohs7"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mxnqb"]
+albedo_color = Color(0.25490198, 0.2, 0.09019608, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bbulc"]
+albedo_color = Color(0.22352941, 0.13725491, 0.039215688, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hnumd"]
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="Pasillo" type="Node3D" unique_id=1199737312]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=929490715]
+environment = SubResource("Environment_1hpwa")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1395228667]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4428251, 0)
+
+[node name="Suelo" type="CSGBox3D" parent="." unique_id=203385500]
+size = Vector3(3, 0.2, 10)
+material = SubResource("StandardMaterial3D_g4v7s")
+
+[node name="Suelo2" type="CSGBox3D" parent="." unique_id=476964004]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.995725)
+size = Vector3(3, 0.2, 10)
+material = SubResource("StandardMaterial3D_g4v7s")
+
+[node name="Suelo3" type="CSGBox3D" parent="." unique_id=1048598450]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19.988873)
+size = Vector3(3, 0.2, 10)
+material = SubResource("StandardMaterial3D_g4v7s")
+
+[node name="ParedIzquierda" type="CSGBox3D" parent="." unique_id=932021398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.5, 0)
+size = Vector3(0.2, 3, 10)
+material = SubResource("StandardMaterial3D_81rpy")
+
+[node name="ParedIzquierda2" type="CSGBox3D" parent="." unique_id=947448956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.5, 9.995725)
+size = Vector3(0.2, 3, 10)
+material = SubResource("StandardMaterial3D_81rpy")
+
+[node name="ParedIzquierda3" type="CSGBox3D" parent="." unique_id=515766774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.5, 19.988857)
+size = Vector3(0.2, 3, 10)
+material = SubResource("StandardMaterial3D_81rpy")
+
+[node name="ParedDerecha" type="CSGBox3D" parent="." unique_id=386614236]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 0)
+size = Vector3(0.2, 3, 10)
+material = SubResource("StandardMaterial3D_x3cor")
+
+[node name="ParedDerecha2" type="CSGBox3D" parent="." unique_id=1404192909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 10.000103)
+size = Vector3(0.2, 3, 10)
+material = SubResource("StandardMaterial3D_x3cor")
+
+[node name="ParedDerecha3" type="CSGBox3D" parent="." unique_id=621340538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 1.5, 19.999031)
+size = Vector3(0.2, 3, 10)
+material = SubResource("StandardMaterial3D_x3cor")
+
+[node name="Techo" type="CSGBox3D" parent="." unique_id=332722234]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1, 0)
+size = Vector3(3, 0.2, 10)
+material = SubResource("StandardMaterial3D_ev3xi")
+
+[node name="Techo2" type="CSGBox3D" parent="." unique_id=667296140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1, 9.995725)
+size = Vector3(3, 0.2, 10)
+material = SubResource("StandardMaterial3D_ev3xi")
+
+[node name="Techo3" type="CSGBox3D" parent="." unique_id=1171031040]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1, 20.001423)
+size = Vector3(3, 0.2, 10)
+material = SubResource("StandardMaterial3D_ev3xi")
+
+[node name="Viga1" type="CSGBox3D" parent="." unique_id=1826207103]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, -4)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_2mbla")
+
+[node name="Viga2" type="CSGBox3D" parent="." unique_id=1957544021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, -2)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_3q5ht")
+
+[node name="Viga3" type="CSGBox3D" parent="." unique_id=387737495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 0)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_w07jp")
+
+[node name="Viga4" type="CSGBox3D" parent="." unique_id=475051731]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 2)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_kjmv7")
+
+[node name="Viga5" type="CSGBox3D" parent="." unique_id=1903376615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 4)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_thndo")
+
+[node name="Viga6" type="CSGBox3D" parent="." unique_id=1084616553]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 6)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_2mbla")
+
+[node name="Viga7" type="CSGBox3D" parent="." unique_id=2101098340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 8)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_3q5ht")
+
+[node name="Viga8" type="CSGBox3D" parent="." unique_id=2016506082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 10)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_w07jp")
+
+[node name="Viga9" type="CSGBox3D" parent="." unique_id=1666185254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 12)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_kjmv7")
+
+[node name="Viga10" type="CSGBox3D" parent="." unique_id=1318070438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 14)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_thndo")
+
+[node name="Viga11" type="CSGBox3D" parent="." unique_id=1088738952]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 16)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_thndo")
+
+[node name="Viga12" type="CSGBox3D" parent="." unique_id=431529539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 18)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_thndo")
+
+[node name="Viga13" type="CSGBox3D" parent="." unique_id=1112825854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 20)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_thndo")
+
+[node name="Viga14" type="CSGBox3D" parent="." unique_id=1414505012]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 22)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_thndo")
+
+[node name="Viga15" type="CSGBox3D" parent="." unique_id=1946051059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.85, 24)
+size = Vector3(3.2, 0.3, 0.4)
+material = SubResource("StandardMaterial3D_thndo")
+
+[node name="MarcoPuertaIzquierda1" type="CSGBox3D" parent="." unique_id=386924061]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.443, 1.1, -2)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_1hpwa")
+
+[node name="PuertaIzquierda1" type="CSGBox3D" parent="." unique_id=1141778374]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42, 1, -2)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_mk6rk")
+
+[node name="PomoIzquierdo1" type="CSGSphere3D" parent="." unique_id=2146404269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36, 0.9, -2.367227)
+radius = 0.04
+material = SubResource("StandardMaterial3D_yq2s1")
+
+[node name="MarcoPuertaIzquierda2" type="CSGBox3D" parent="." unique_id=1164074486]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.443, 1.1, 2)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_dx7l8")
+
+[node name="PuertaIzquierda2" type="CSGBox3D" parent="." unique_id=1048671946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42, 1, 2)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_7x8o5")
+
+[node name="PomoIzquierdo2" type="CSGSphere3D" parent="." unique_id=1360101833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36, 0.9, 1.6)
+radius = 0.04
+material = SubResource("StandardMaterial3D_p0rlr")
+
+[node name="MarcoPuertaIzquierda3" type="CSGBox3D" parent="." unique_id=1983765793]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.443, 1.1, 6)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_1hpwa")
+
+[node name="PuertaIzquierda3" type="CSGBox3D" parent="." unique_id=1388649323]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42, 1, 6)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_mk6rk")
+
+[node name="PomoIzquierdo3" type="CSGSphere3D" parent="." unique_id=933735266]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36, 0.9, 5.6418333)
+radius = 0.04
+material = SubResource("StandardMaterial3D_yq2s1")
+
+[node name="MarcoPuertaIzquierda4" type="CSGBox3D" parent="." unique_id=2068130175]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.443, 1.1, 10)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_dx7l8")
+
+[node name="MarcoPuertaIzquierda5" type="CSGBox3D" parent="." unique_id=829652472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.443, 1.1, 14)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_dx7l8")
+
+[node name="MarcoPuertaIzquierda6" type="CSGBox3D" parent="." unique_id=1116580069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.443, 1.1, 18)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_dx7l8")
+
+[node name="MarcoPuertaIzquierda7" type="CSGBox3D" parent="." unique_id=473682770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.443, 1.1, 22)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_dx7l8")
+
+[node name="PuertaIzquierda4" type="CSGBox3D" parent="." unique_id=1847966901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42, 1, 10)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_7x8o5")
+
+[node name="PomoIzquierdo4" type="CSGSphere3D" parent="." unique_id=560852373]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3716124, 0.9, 9.646344)
+radius = 0.04
+material = SubResource("StandardMaterial3D_p0rlr")
+
+[node name="PomoIzquierdo5" type="CSGSphere3D" parent="." unique_id=34749621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3716124, 0.9, 13.636601)
+radius = 0.04
+material = SubResource("StandardMaterial3D_p0rlr")
+
+[node name="PomoIzquierdo6" type="CSGSphere3D" parent="." unique_id=612569248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3716124, 0.9, 17.639944)
+radius = 0.04
+material = SubResource("StandardMaterial3D_p0rlr")
+
+[node name="PomoIzquierdo7" type="CSGSphere3D" parent="." unique_id=1923945731]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3716124, 0.9, 21.607206)
+radius = 0.04
+material = SubResource("StandardMaterial3D_p0rlr")
+
+[node name="PuertaIzquierda5" type="CSGBox3D" parent="." unique_id=1542816850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42, 1, 14)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_7x8o5")
+
+[node name="PuertaIzquierda6" type="CSGBox3D" parent="." unique_id=1736143248]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42, 1, 18)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_7x8o5")
+
+[node name="PuertaIzquierda7" type="CSGBox3D" parent="." unique_id=215610035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.42, 1, 22)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_7x8o5")
+
+[node name="MarcoPuertaDerecha1" type="CSGBox3D" parent="." unique_id=560577194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4434769, 1.1, -2)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_2mk6l")
+
+[node name="PuertaDerecha1" type="CSGBox3D" parent="." unique_id=409814799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42, 1, -2)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_5h7w7")
+
+[node name="PomoDerecho1" type="CSGSphere3D" parent="." unique_id=1215226873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36, 0.9, -1.6)
+radius = 0.04
+material = SubResource("StandardMaterial3D_5ohs7")
+
+[node name="MarcoPuertaDerecha2" type="CSGBox3D" parent="." unique_id=1283092829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.443, 1.1, 2)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_mxnqb")
+
+[node name="PuertaDerecha2" type="CSGBox3D" parent="." unique_id=463619321]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42, 1, 2)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_bbulc")
+
+[node name="PomoDerecho2" type="CSGSphere3D" parent="." unique_id=1304556138]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36, 0.9, 1.6)
+radius = 0.04
+material = SubResource("StandardMaterial3D_hnumd")
+
+[node name="MarcoPuertaDerecha3" type="CSGBox3D" parent="." unique_id=567246416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.443, 1.1, 6)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_mxnqb")
+
+[node name="PuertaDerecha3" type="CSGBox3D" parent="." unique_id=599251904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42, 1, 6)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_bbulc")
+
+[node name="PomoDerecho3" type="CSGSphere3D" parent="." unique_id=658292169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36, 0.9, 5.7017965)
+radius = 0.04
+material = SubResource("StandardMaterial3D_hnumd")
+
+[node name="MarcoPuertaDerecha4" type="CSGBox3D" parent="." unique_id=1304204058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.44, 1.1, 10)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_1hpwa")
+
+[node name="MarcoPuertaDerecha5" type="CSGBox3D" parent="." unique_id=1737277105]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.44, 1.1, 14)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_1hpwa")
+
+[node name="MarcoPuertaDerecha6" type="CSGBox3D" parent="." unique_id=2138244345]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.44, 1.1, 18)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_1hpwa")
+
+[node name="MarcoPuertaDerecha7" type="CSGBox3D" parent="." unique_id=452538241]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.44, 1.1, 22)
+size = Vector3(0.1, 2.2, 1.2)
+material = SubResource("StandardMaterial3D_1hpwa")
+
+[node name="PuertaDerecha4" type="CSGBox3D" parent="." unique_id=1646832160]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42, 1, 10)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_mk6rk")
+
+[node name="PuertaDerecha5" type="CSGBox3D" parent="." unique_id=1937169140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42, 1, 14)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_mk6rk")
+
+[node name="PuertaDerecha6" type="CSGBox3D" parent="." unique_id=2083550965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42, 1, 18)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_mk6rk")
+
+[node name="PuertaDerecha7" type="CSGBox3D" parent="." unique_id=535590980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42, 1, 22)
+size = Vector3(0.08, 2, 1)
+material = SubResource("StandardMaterial3D_mk6rk")
+
+[node name="PomoDerecho4" type="CSGSphere3D" parent="." unique_id=2025301059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36, 0.9, 9.654991)
+radius = 0.04
+material = SubResource("StandardMaterial3D_yq2s1")
+
+[node name="PomoDerecho5" type="CSGSphere3D" parent="." unique_id=856538916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36, 0.9, 13.647703)
+radius = 0.04
+material = SubResource("StandardMaterial3D_yq2s1")
+
+[node name="PomoDerecho6" type="CSGSphere3D" parent="." unique_id=1035683408]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36, 0.9, 17.6625)
+radius = 0.04
+material = SubResource("StandardMaterial3D_yq2s1")
+
+[node name="PomoDerecho7" type="CSGSphere3D" parent="." unique_id=1967556428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.36, 0.9, 21.650803)
+radius = 0.04
+material = SubResource("StandardMaterial3D_yq2s1")
+
+[node name="FarolIzquierdo1" type="CSGBox3D" parent="." unique_id=1038873344]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, -3)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D1" type="OmniLight3D" parent="FarolIzquierdo1" unique_id=1143015192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18056583, 0, -0.13335991)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo2" type="CSGBox3D" parent="." unique_id=274435442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, -1)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="FarolIzquierdo2" unique_id=1387406459]
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 1.5
+shadow_enabled = true
+omni_range = 4.0
+
+[node name="FarolIzquierdo3" type="CSGBox3D" parent="." unique_id=155583413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 1)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="FarolIzquierdo3" unique_id=531310360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 1.5
+shadow_enabled = true
+omni_range = 4.0
+
+[node name="FarolIzquierdo4" type="CSGBox3D" parent="." unique_id=1531479133]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 3)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="FarolIzquierdo4" unique_id=2123796437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02285695, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+light_indirect_energy = 4.96
+light_volumetric_fog_energy = 5.911
+light_size = 0.079
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo5" type="CSGBox3D" parent="." unique_id=1102697768]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 5)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="FarolIzquierdo5" unique_id=854052850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02285695, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+light_indirect_energy = 4.96
+light_volumetric_fog_energy = 5.911
+light_size = 0.079
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo6" type="CSGBox3D" parent="." unique_id=201570875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 7)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="FarolIzquierdo6" unique_id=645252429]
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo7" type="CSGBox3D" parent="." unique_id=693221301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 9)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="FarolIzquierdo7" unique_id=627391844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo8" type="CSGBox3D" parent="." unique_id=1640536075]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 11)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="FarolIzquierdo8" unique_id=1203049224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo9" type="CSGBox3D" parent="." unique_id=1932503049]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 13)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="FarolIzquierdo9" unique_id=1242176120]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo10" type="CSGBox3D" parent="." unique_id=1718923746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 15)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="FarolIzquierdo10" unique_id=1019668984]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo11" type="CSGBox3D" parent="." unique_id=1958614458]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 17)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="FarolIzquierdo11" unique_id=339650231]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo12" type="CSGBox3D" parent="." unique_id=1117982255]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 19)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="FarolIzquierdo12" unique_id=295373719]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo13" type="CSGBox3D" parent="." unique_id=520723552]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 21)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="FarolIzquierdo13" unique_id=273567181]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolIzquierdo14" type="CSGBox3D" parent="." unique_id=126358205]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35, 1.8, 23)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="FarolIzquierdo14" unique_id=1668514401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.073857665, 0, 0.021842122)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolDerecho1" type="CSGBox3D" parent="." unique_id=1517557941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, -3)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De1" type="OmniLight3D" parent="FarolDerecho1" unique_id=752862767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35799885, 0, 0.43097734)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.0
+
+[node name="FarolDerecho2" type="CSGBox3D" parent="." unique_id=829311590]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, -1)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De2" type="OmniLight3D" parent="FarolDerecho2" unique_id=212297071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.018356085, 0, 0.028551519)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.0
+
+[node name="FarolDerecho3" type="CSGBox3D" parent="." unique_id=467955729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 1)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De3" type="OmniLight3D" parent="FarolDerecho3" unique_id=378428937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.012721777, 0, 0.010836124)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.0
+
+[node name="FarolDerecho4" type="CSGBox3D" parent="." unique_id=1515327371]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 3)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De4" type="OmniLight3D" parent="FarolDerecho4" unique_id=902535535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02285695, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+light_indirect_energy = 4.96
+light_volumetric_fog_energy = 5.911
+light_size = 0.079
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolDerecho5" type="CSGBox3D" parent="." unique_id=598699237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 5)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De5" type="OmniLight3D" parent="FarolDerecho5" unique_id=1596185829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.02285695, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+light_indirect_energy = 4.96
+light_volumetric_fog_energy = 5.911
+light_size = 0.079
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolDerecho6" type="CSGBox3D" parent="." unique_id=2067843190]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 7)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De6" type="OmniLight3D" parent="FarolDerecho6" unique_id=1815013820]
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+shadow_enabled = true
+omni_range = 4.32
+
+[node name="FarolDerecho7" type="CSGBox3D" parent="." unique_id=1001018742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 9)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De7" type="OmniLight3D" parent="FarolDerecho7" unique_id=1954530454]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033745766, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+omni_range = 4.32
+
+[node name="FarolDerecho8" type="CSGBox3D" parent="." unique_id=410323587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 11)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De7" type="OmniLight3D" parent="FarolDerecho8" unique_id=1107498189]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033745766, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+omni_range = 4.32
+
+[node name="FarolDerecho9" type="CSGBox3D" parent="." unique_id=1385650579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.371, 1.8, 13)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De7" type="OmniLight3D" parent="FarolDerecho9" unique_id=140994543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033745766, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+omni_range = 4.32
+
+[node name="FarolDerecho10" type="CSGBox3D" parent="." unique_id=1665268962]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 15)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De7" type="OmniLight3D" parent="FarolDerecho10" unique_id=1801132235]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033745766, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+omni_range = 4.32
+
+[node name="FarolDerecho11" type="CSGBox3D" parent="." unique_id=414809398]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 17)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De7" type="OmniLight3D" parent="FarolDerecho11" unique_id=737891560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033745766, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+omni_range = 4.32
+
+[node name="FarolDerecho12" type="CSGBox3D" parent="." unique_id=1193947648]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 19)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De7" type="OmniLight3D" parent="FarolDerecho12" unique_id=401753599]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033745766, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+omni_range = 4.32
+
+[node name="FarolDerecho13" type="CSGBox3D" parent="." unique_id=1535720020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 21)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De7" type="OmniLight3D" parent="FarolDerecho13" unique_id=2113122020]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033745766, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+omni_range = 4.32
+
+[node name="FarolDerecho14" type="CSGBox3D" parent="." unique_id=1060052227]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35, 1.8, 23)
+size = Vector3(0.2, 0.3, 0.2)
+
+[node name="OmniLight3De7" type="OmniLight3D" parent="FarolDerecho14" unique_id=1441361920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.033745766, 0, 0)
+light_color = Color(1, 0.53333336, 0.13333334, 1)
+light_energy = 6.094
+omni_range = 4.32
